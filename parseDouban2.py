@@ -27,7 +27,7 @@ def fetchAllReadUsers(bookNumber, pageNumber):
     bookCollectionURL = 'http://book.douban.com/subject/%s/collections?start=%d' % (bookNumber,pageNumber) 
     #添加随机headers防止被forbidon
     
-    html = opener.open('http://www.baidu.com').read()
+    html = opener.open(bookCollectionURL).read()
     soup = BeautifulSoup(html)
     result = soup.findAll('div', id="collections_tab")
     result2 = result[0]
