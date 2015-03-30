@@ -1,2 +1,4 @@
 # PythonSearchDouban
 一个豆瓣爬虫的实现.
+parseDouban2.py这个文件用来获取所有阅读过iOS开发书籍的用户ID.
+analysis开头的两个文件用来计算哪些用户阅读过书籍的数量最多.
